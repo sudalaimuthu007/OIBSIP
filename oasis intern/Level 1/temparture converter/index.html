@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--boxicons links-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--fontawesome link-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="converter-box">
+        <div class="mobile-display">
+            <p>10:30</p>
+            <div class="mobile-icons">
+                <i class="fa-solid fa-signal" style="color: #000714;"></i>             
+                <i class="fa-solid fa-wifi" style="color: #020c1d;"></i>
+                <i class="fa-solid fa-battery-three-quarters fa-rotate-180" style="color: #000000;"></i>
+            </div>
+        </div>
+
+        <div class="tittle">TEMPERATURE CONVERTER</div>
+    
+        <i class="fa-solid fa-temperature-high" style="color: #000000;"></i>       
+        
+
+
+           
+         <div class="degree-type">
+          <div class="degree-box">
+            <label for="degrees">Degrees :</label>
+            <input type="number" name="degrees" id="degrees" placeholder="0">
+         </div>
+         <div class="type">
+            <label for="temp-types">Type : </label>
+            <select name="temp-types" id="temp-types">
+                <option value="Select">Select</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Celsius">celsius</option>
+                 <option value="kelvin">Kelvin</option>
+            </select>
+         </div>
+        </div>
+
+         <div class="result-box">
+            <span class="result-heading">Result</span>
+            <h2 class="result-value" id="result-value"></h2>
+         </div>
+         
+            <button class="btn" id="btn">Convert</button>
+         
+    </div>
+
+
+    </div>
+
+
+
+
+    <script src="converter.js"></script>
+    
+</body>
+</html>
